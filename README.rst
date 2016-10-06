@@ -1,3 +1,7 @@
+====
+This is a Django 1.7 compatible fork of the main project with patches to S3 Boto Storage
+====
+
 ===============
 django-storages
 ===============
