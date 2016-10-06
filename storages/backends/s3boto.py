@@ -515,9 +515,9 @@ class S3BotoStorage(Storage):
             response_headers=response_headers,
         )
 
-    def get_available_name(self, name, max_length=None):
+    def get_available_name(self, name):
         """ Overwrite existing file with the same name. """
         if self.file_overwrite:
             name = self._clean_name(name)
             return name
-        return super(S3BotoStorage, self).get_available_name(name, max_length)
+        return super(S3BotoStorage, self).get_available_name(name)
